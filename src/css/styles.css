@@ -12,3 +12,11 @@
     --cor-texto: #333;
     --cor-fundo: #ffffff;
 }
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    line-height: 1.6;
+}
