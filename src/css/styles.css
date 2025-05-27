@@ -26,6 +26,9 @@ header {
     background-color: var(--cor-primaria);
     color: white;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Navegação */
