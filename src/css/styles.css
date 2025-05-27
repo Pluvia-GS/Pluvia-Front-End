@@ -7,6 +7,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 /* Variáveis CSS */
@@ -21,6 +22,24 @@ html {
     --border-radius: 12px;
     --sombra-leve: 0 4px 15px rgba(37, 99, 235, 0.1);
     --transicao: all 0.3s ease;
+}
+
+/* Scroll personalizado */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--cor-fundo-alt);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--cor-acento);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--cor-primaria);
 }
 
 /* Estilos gerais */
@@ -84,8 +103,9 @@ nav a:hover {
 
 /* Seções centralizadas */
 section {
-    padding: 80px 0;
+    padding: 90px 0;
     width: 100%;
+    position: relative;
 }
 
 .section-content {
@@ -172,15 +192,38 @@ section p {
     font-weight: 400;
 }
 
-/* Footer */
+/* Footer moderno */
 footer {
-    background-color: var(--cor-secundaria);
+    background: linear-gradient(135deg, var(--cor-secundaria) 0%, var(--cor-primaria) 100%);
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.95;
+    margin: 0;
 }
 
 /* Cores específicas por seção */
+#problema {
+    background: linear-gradient(135deg, #fef2f2 0%, var(--cor-fundo-alt) 100%);
+}
+
 #problema h2 {
     color: #dc2626;
 }
@@ -193,12 +236,20 @@ footer {
     color: var(--cor-primaria);
 }
 
+#objetivos {
+    background: linear-gradient(135deg, #f0f9ff 0%, var(--cor-fundo-alt) 100%);
+}
+
 #objetivos h2 {
     color: var(--cor-acento);
 }
 
 #objetivos h2::after {
     background: var(--cor-acento);
+}
+
+#beneficios {
+    background: linear-gradient(135deg, #f0fdf4 0%, var(--cor-fundo-alt) 100%);
 }
 
 #beneficios h2 {
@@ -232,6 +283,10 @@ footer {
         margin-top: 120px;
     }
     
+    section {
+        padding: 60px 0;
+    }
+    
     .section-content {
         flex-direction: column;
         gap: 35px;
@@ -257,5 +312,9 @@ footer {
     section h2::after {
         left: 50%;
         transform: translateX(-50%);
+    }
+    
+    footer {
+        padding: 30px 20px;
     }
 }
