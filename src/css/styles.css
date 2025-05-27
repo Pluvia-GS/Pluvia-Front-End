@@ -54,6 +54,11 @@ section {
     padding: 60px 20px;
     max-width: 800px;
     margin: 0 auto;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-of-type {
+    border-bottom: none;
 }
 
 section h2 {
