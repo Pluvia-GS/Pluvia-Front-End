@@ -43,3 +43,10 @@ nav a {
     text-decoration: none;
     padding: 10px;
 }
+
+/* Seções */
+section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
