@@ -13,8 +13,14 @@ html {
 :root {
     --cor-primaria: #2563eb;
     --cor-secundaria: #1e40af;
+    --cor-acento: #0ea5e9;
     --cor-texto: #333;
+    --cor-texto-claro: #666;
     --cor-fundo: #ffffff;
+    --cor-fundo-alt: #f8fafc;
+    --border-radius: 12px;
+    --sombra-leve: 0 4px 15px rgba(37, 99, 235, 0.1);
+    --transicao: all 0.3s ease;
 }
 
 /* Estilos gerais */
@@ -45,24 +51,33 @@ nav ul {
 nav a {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: var(--transicao);
 }
 
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
 }
 
 /* Seções */
 section {
     padding: 60px 20px;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     border-bottom: 1px solid #eee;
 }
 
 section:last-of-type {
     border-bottom: none;
+}
+
+section:nth-child(even) {
+    background-color: var(--cor-fundo-alt);
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .section-content {
@@ -72,10 +87,17 @@ section:last-of-type {
 }
 
 .image-content img {
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 240px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--sombra-leve);
+    transition: var(--transicao);
+}
+
+.image-content img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.15);
 }
 
 .section-content.reverse {
@@ -90,11 +112,14 @@ section h2 {
     color: var(--cor-primaria);
     font-size: 2rem;
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
 section p {
     margin-bottom: 15px;
     font-size: 1.1rem;
+    color: var(--cor-texto-claro);
+    line-height: 1.7;
 }
 
 /* Footer */
