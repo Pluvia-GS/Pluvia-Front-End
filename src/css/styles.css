@@ -34,3 +34,9 @@ nav ul {
     display: flex;
     gap: 20px;
 }
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
