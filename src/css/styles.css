@@ -15,7 +15,7 @@
 
 /* Estilos gerais */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     color: var(--cor-texto);
     background-color: var(--cor-fundo);
     line-height: 1.6;
