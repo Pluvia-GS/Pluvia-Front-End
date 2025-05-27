@@ -61,3 +61,11 @@ section p {
     margin-bottom: 15px;
     font-size: 1.1rem;
 }
+
+/* Footer */
+footer {
+    background-color: var(--cor-secundaria);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
