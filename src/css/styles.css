@@ -65,6 +65,12 @@ section:last-of-type {
     border-bottom: none;
 }
 
+.section-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 section h2 {
     color: var(--cor-primaria);
     font-size: 2rem;
