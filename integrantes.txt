@@ -1,0 +1,22 @@
+GLOBAL SOLUTION 2025.1 - Pluvia
+==========================================
+
+DISCIPLINA: Front-end Design
+TEMA: Enchentes e seus Efeitos
+
+INTEGRANTES DO GRUPO:
+==========================================
+
+Nome: Bruno Koeke
+RM: 561309
+
+Nome: Anthony Sforzin
+RM: 562096
+
+Nome: Thayna Simoes
+RM: 566456
+
+==========================================
+TURMA: 1ESPH25
+
+Github: https://github.com/Pluvia-GS/Pluvia-Front-End
