@@ -44,6 +44,11 @@ nav a {
     padding: 10px;
 }
 
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
 /* Seções */
 section {
     padding: 60px 20px;
