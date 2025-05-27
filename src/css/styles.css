@@ -4,3 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Variáveis CSS */
+:root {
+    --cor-primaria: #2563eb;
+    --cor-secundaria: #1e40af;
+    --cor-texto: #333;
+    --cor-fundo: #ffffff;
+}
